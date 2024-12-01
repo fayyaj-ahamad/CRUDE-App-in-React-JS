@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(187, 224, 234, 0.923);
+}
+
+.wrapper{
+  width: 100%;
+}
+.todo-wrapper{
+  width: 400px;
+  height: 45px;
+  background-color: rgb(30, 37, 37);
+}
+
+.input input{
+  width: 70%;
+  padding: 0.4em 0.2em;
+  margin: 0.5em 1em;
+  outline: none;
+  border: none;
+  color: #52d8bf;
+  background-color: inherit;
+  border: 0.2em solid #52d8bf;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+}
+
+.input input::placeholder{
+  color: #1fcfe6;
+}
+
+.input button{
+  padding: 0.6em 0em;
+  width: 5vw;
+  border: none;
+  outline: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #111;
+}
+
+.add{
+  background-color:  #1fcfe6;
+}
+
+.update{
+  background-color: rgba(6, 221, 6, 0.615);
+}
+.todo-item{
+  width: 400px;
+  margin: 1em 0em;
+}
+
+.todo-item .item{
+  width: 100%;
+  background-color: rgb(30, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.3em 0em;
+  padding: 0.2em 1em;
+  color: #52d8bf;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+.todo-item .item p{
+  font-size: 1.2em;
+}
+
+.todo-item .item button{
+  margin: 0em 0.2em;
+  padding: 0.4em 0em;
+  width: 4.6vw;
+  border: none;
+  outline: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #111;
+}
+.todo-item .item .edit{
+  background-color: rgb(23, 210, 23);
+}
+.todo-item .item .delete{
+  background-color: rgb(223, 17, 17);
+}
+
+
+@media(max-width:991px){
+  
+  .wrapper {
+    width: 100%;
+  }
+
+  .input input {
+    width: 75%;
+}
+
+.input button {
+  width: 70px;
+}
+.todo-item .item .edit {
+  width: 80px;
+}
+.todo-item .item .delete {
+  width: 80px;
+}
+}
+
+@media(max-width:407px){
+  .todo-wrapper {
+    width: 350px;
+}
+.input button {
+  width: 50px;
+}
+
+.todo-item {
+  width: 350px;
+}
+}
